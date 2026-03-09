@@ -7,7 +7,7 @@ namespace Config
     const int WIDTH = 1920;
     const int HEIGHT = 1080;
     const int FONT_SIZE = 50;
-    const std::string FONT_PATH = "/System/Library/Fonts/Monaco.ttf"; 
+    const std::string FONT_PATH = "assets/Monaco.ttf";
 
     
     const sf::Color COLOR_BG(32, 34, 37);

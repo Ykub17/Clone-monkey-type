@@ -23,3 +23,9 @@ target_link_libraries(Monkeytype sfml-graphics sfml-window sfml-system)
 
 # Настройка вывода в папку build (по желанию)
 set_target_properties(Monkeytype PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
+
+# Копіювання папки з ресурсами в папку з бінарником
+add_custom_command(TARGET Monkeytype POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    ${CMAKE_SOURCE_DIR}/assets
+    $<TARGET_FILE_DIR:Monkeytype>/assets)
