@@ -1,0 +1,23 @@
+# Сборка и бинарники
+build/
+bin/
+obj/
+*.o
+*.a
+*.out
+Monkeytype
+
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
+
+# Настройки IDE (VS Code, CLion, Xcode)
+.vscode/
+.idea/
+*.swp
+*.user
+*.sublime-project
+*.sublime-workspace
+
+# Логи и временные файлы
+*.log
